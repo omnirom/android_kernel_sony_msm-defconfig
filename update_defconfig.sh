@@ -1,6 +1,8 @@
-cd ../../../../../../../..
-export ANDROID_ROOT=$(pwd)
-export KERNEL_TOP=$ANDROID_ROOT/kernel/sony/msm-4.9
+ANDROID_ROOT=../../../../../../..
+cd $ANDROID_ROOT;
+ANDROID_ROOT=$(pwd);
+export ANDROID_ROOT
+export KERNEL_TOP=$ANDROID_ROOT/kernel/sony/msm
 export KERNEL_CFG=arch/arm64/configs/sony
 export KERNEL_TMP=$ANDROID_ROOT/out/kernel-tmp
 export BUILD="make O=$KERNEL_TMP ARCH=arm64 CROSS_COMPILE=$CROSS_COMPILE -j$(nproc)"
@@ -12,7 +14,7 @@ NILE="discovery pioneer"
 TAMA="akari apollo"
 
 PLATFORMS="loire tone yoshino nile tama"
-cd $KERNEL_TOP/kernel
+cd $KERNEL_TOP
 
 for platform in $PLATFORMS; do \
 
