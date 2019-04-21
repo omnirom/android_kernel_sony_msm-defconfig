@@ -43,13 +43,13 @@ tone)
     DRM="false";;
 yoshino)
     DEVICE=$YOSHINO;
-    DRM="false";;
+    DRM="true";;
 nile)
     DEVICE=$NILE;
     DRM="true";;
 ganges)
     DEVICE=$GANGES;
-    DRM="false";;
+    DRM="true";;
 tama)
     DEVICE=$TAMA;
     DRM="true";;
